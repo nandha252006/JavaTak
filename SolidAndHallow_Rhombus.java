@@ -1,29 +1,28 @@
 import java.util.Scanner;
-class Diamond{
+class SolidAndHallow_Rhombus{
   public static void main(String[] args){
-    Scanner sc=new Scanner (System.in);
+    Scanner sc=new Scanner(System.in);
     int a=sc.nextInt();
     for(int i=0;i<a;i++){
-      for(int m=0;m<a-i;m++){
+      for(int s=0;s<a-i;s++){
         System.out.print(" ");
       }
-      for(int n=0;n<=i;n++){
-        System.out.print("*");
-      }
-      for(int o=0;o<i;o++){
+      for(int j=0;j<a;j++){
         System.out.print("*");
       }
       System.out.println("");
     }
     for(int i=0;i<a;i++){
-      for(int m=0;m<i+1;m++){
+      for(int s=0;s<a-i;s++){
         System.out.print(" ");
       }
-      for(int n=0;n<a-i;n++){
-        System.out.print("*");
-      }
-      for(int o=0;o<a-i-1;o++){
-        System.out.print("*");
+      for(int j=0;j<a;j++){
+        if((i>0 && i<a-1) &&(j>0 && j<a-1)){
+          System.out.print(" ");
+        }
+        else{
+          System.out.print("*");
+        }
       }
       System.out.println("");
     }
